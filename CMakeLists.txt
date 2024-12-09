@@ -5,7 +5,7 @@ project(bytearray LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_library(${PROJECT_NAME} STATIC main.cpp)
+add_library(${PROJECT_NAME} STATIC bytearray.cpp bytearray.h)
 
 include(GNUInstallDirs)
 install(TARGETS ${PROJECT_NAME}   
